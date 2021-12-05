@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: inherit;
+}
+/*-----------------------------------------------------------nav*/
+header {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  width: 15vh;
+}
+nav {
+  left: -4rem;
+  background-color: rgba(26, 25, 25, 0.986);
+  width: 15vh;
+  height: 100vh;
+}
+
+nav #logo {
+  width: 15vh;
+  height: 15vh;
+  padding: 0.5rem;
+  position: relative;
+  left: -0.5rem;
+}
+
+nav #contentLogo {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+nav #menu {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.divMenu {
+  width: 15vh;
+  height: 8vh;
+  padding: 1rem;
+  border-top: 1px solid rgb(9, 51, 1);
+  border-bottom: 1px solid rgb(9, 51, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li div a {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+  font-size: 1rem;
+}
+
+nav #menu li > div > a > i {
+  display: none;
+}
+
+nav div > a > i {
+  color: rgb(116, 116, 116);
+}
+
+nav #redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav #redes a i {
+  padding: 0.5rem;
+}
+
+nav #redes a i:hover {
+  cursor: pointer;
+  color: #32c1cd;
+  transition: linear;
+}
+
+nav > ul > #contentLogo > #programador {
+  font-size: 0.8rem;
+}
+.divMenu a span:hover {
+  cursor: pointer;
+  color: #32c1cd;
+  transition: linear;
+}
+/*----------------------------------------------------------------section*/
+body {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: repeat-y;
+}
+section {
+  height: 100vh;
+}
+
+label {
+  margin: 1rem;
+  visibility: hidden;
+}
+
+input#hamburguesa-icono {
+  visibility: hidden;
+}
+/*--------------------------------------------------------------------Responsividad tablet*/
+@media (max-width: 768px) {
+  /*-------------------------section*/
+
+  /*-------------------------nav*/
+  nav #menu li > div > a > i {
+    display: inline;
+  }
+  nav ul li div span {
+    display: none;
+  }
+  nav #menu {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: white;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+/*---------------------------------------------------------Responsividad celular*/
+@media (max-width: 500px) {
+  /*---------------------section*/
+
+  /*---------------------hamburger*/
+  nav {
+    margin-top: 2rem;
+    background-color: transparent;
+  }
+  nav #contentLogo {
+    display: block;
+  }
+  nav #menu li > div > a > i {
+    display: none;
+  }
+  nav ul li div span {
+    display: inline;
+  }
+
+  label i {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+    visibility: visible;
+    color: white;
+  }
+
+  input#hamburguesa-icono ~ nav {
+    display: none;
+  }
+
+  input#hamburguesa-icono:checked ~ nav {
+    display: block;
+  }
+}

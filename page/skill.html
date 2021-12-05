@@ -9,17 +9,19 @@
       src="https://kit.fontawesome.com/9aead62101.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles/stylesindex.css" />
+    <link rel="stylesheet" href="../styles/stylesskill.css" />
   </head>
   <body>
     <input type="checkbox" id="hamburguesa-icono" />
     <label for="hamburguesa-icono"><i class="fas fa-bars"></i></label>
-    <!----------------------------------------------------------header-->
+    <!---------------------------------------------------------------nav-->
     <header>
       <nav>
         <ul>
           <div id="contentLogo">
-            <img id="logo" src="./img/Logo.png" alt="logo" />
+            <a href="../index.html"
+              ><img id="logo" src="../img/Logo.png" alt="logo"
+            /></a>
             <span id="nombre"><b>Alvaro</b></span
             ><br />
             <span id="programador">Web Developer</span>
@@ -27,7 +29,7 @@
           <div id="menu">
             <li>
               <div class="divMenu">
-                <a href="./page/about.html">
+                <a href="./about.html">
                   <i class="far fa-address-card"></i>
                   <span><b>About</b></span>
                 </a>
@@ -35,7 +37,7 @@
             </li>
             <li>
               <div class="divMenu">
-                <a href="./page/skill.html">
+                <a href="./skill.html">
                   <i class="fab fa-battle-net"></i>
                   <span><b>My Skill</b></span>
                 </a>
@@ -43,7 +45,7 @@
             </li>
             <li>
               <div class="divMenu">
-                <a href="./page/work.html">
+                <a href="./work.html">
                   <i class="fas fa-briefcase"></i>
                   <span><b>Work</b></span>
                 </a>
@@ -51,7 +53,7 @@
             </li>
             <li>
               <div class="divMenu">
-                <a href="./page/Blog.html">
+                <a href="./Blog.html">
                   <i class="fas fa-blog"></i>
                   <span><b>Blog</b></span>
                 </a>
@@ -59,7 +61,7 @@
             </li>
             <li>
               <div class="divMenu">
-                <a href="./page/contact.html">
+                <a href="../page/contact.html">
                   <i class="far fa-id-badge"></i>
                   <span><b>Contact</b></span>
                 </a>
@@ -79,20 +81,45 @@
         </ul>
       </nav>
     </header>
-    <!--------------------------------------------------------------------section-->
+    <!----------------------------------------------------------------------section-->
     <main>
       <section>
         <div id="contenedorGrid">
-          <div class="contenido">
-            <h1>
-              <p id="primer">Hi,</p>
-              <p id="segundo">I'm <span>lvaro,</span></p>
-              <p id="tercero">Web Developer</p>
-            </h1>
-            <h4>Front End Developer</h4>
-            <button><a href="./page/contact.html">Contact me!</a></button>
+          <div id="bloqueParrafo">
+            <h1>Skill &<br />Experience</h1>
+            <p>
+              I am starting this journey as a developer, I come from practicing
+              electronic engineering that is related to technology careers..
+            </p>
+            <p>
+              I create successful responsive websites that are fast, easy to
+              use, and built with best practices. The main area of ​​my
+              expertise is front-end development, HTML, CSS, JS, building small
+              and medium web apps, custom plugins, features, animations, and
+              coding interactive layouts.
+            </p>
+            <p>
+              Visit my
+              <a
+                href="https://www.linkedin.com/in/alvaro-hernan-poveda-velasco-b81633219/"
+                >LinkedIn</a
+              >
+              profile for more details or just
+              <a href="./contact.html">contact</a> me.
+            </p>
           </div>
-          <img src="./gif/Developer01.gif" alt="Developer01" />
+          <div class="divDos">
+            <span id="HTML">HTML</span>
+            <footer class="HTML"></footer>
+            <span id="CSS">CSS</span>
+            <footer class="CSS"></footer>
+            <span id="JS">JS</span>
+            <footer class="JS"></footer>
+          </div>
+          <div class="divTres">
+            <header>Full stack developer</header>
+            <p>Academlo Academy<br />Student 2021</p>
+          </div>
         </div>
       </section>
     </main>

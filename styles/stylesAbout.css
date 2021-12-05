@@ -6,7 +6,7 @@
   font-family: "Red Hat Display", sans-serif;
   font-style: inherit;
 }
-/*-----------------------------------------------header*/
+/*-----------------------------------------------------------nav*/
 header {
   position: sticky;
   top: 0;
@@ -98,38 +98,52 @@ nav > ul > #contentLogo > #programador {
   color: #32c1cd;
   transition: linear;
 }
-
-/*------------------------------------------section*/
+/*----------------------------------------------------------------section*/
 body {
-  background-image: url("../Portafolio/img/fondo.jpg");
+  background-image: url("../img/fondo.jpg");
   background-repeat: repeat-y;
 }
-
 section {
-  position: relative;
-  min-height: 90vh;
-  width: 80%;
-  top: -40rem;
-  left: 10rem;
+  height: 100vh;
 }
-
 section #contenedorGrid {
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
   width: 80vh;
   display: grid;
   grid-template-columns: 40rem 1fr 1fr;
 }
 
-#contenedorGri > div .contenido {
-  position: relative;
-  width: 80vh;
-  height: 80vh;
-  top: -40rem;
-  left: 10rem;
+section #contenedorGrid #bloqueParrafo {
+  width: 40rem;
 }
 
-section div img {
+section #contenedorGrid #bloqueParrafo h1 {
+  color: rgb(12, 155, 124);
+  font-size: 5rem;
+}
+
+section #contenedorGrid #bloqueParrafo p {
+  position: relative;
+  left: -5rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: justify;
+  padding: 0.5rem 5rem;
+}
+
+section #contenedorGrid #bloqueParrafo a {
+  color: rgb(12, 155, 124);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+section #contenedorGrid > img {
   height: 80vh;
-  width: 85vh;
+  width: 80vh;
   border-radius: 12px;
 }
 
@@ -141,99 +155,41 @@ label {
 input#hamburguesa-icono {
   visibility: hidden;
 }
-
-/*--------------------------------------------animacion*/
-h1 {
-  color: white;
-  font-weight: bold;
-  font-size: 5rem;
-  width: 40rem;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: escribiendo 2s steps(30), cursor 0.5s step-end infinite alternate;
-}
-
-@keyframes escribiendo {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 10ch;
-  }
-}
-
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-
-h1 #segundo span::before {
-  content: url(../img/Logo.png);
-  font-size: 1rem;
-  color: violet;
-}
-
-h4 {
-  color: rgb(116, 116, 116);
-  font-size: 2rem;
-}
-
-button {
-  margin-top: 2rem;
-  width: 30vh;
-  height: 4rem;
-  background-color: transparent;
-  border-color: rgba(66, 228, 106, 0.76);
-}
-button:hover {
-  cursor: pointer;
-  background-color: #e8f2f3;
-  opacity: 0.2;
-  transition: linear;
-}
-button a {
-  text-decoration: none;
-  color: rgba(66, 228, 106, 0.76);
-  font-size: 1.5rem;
-}
-
-button a:hover {
-  cursor: pointer;
-  color: #000000;
-  font-weight: bold;
-  transition: linear;
-}
-/*-----------------------------------------responsividad tablet*/
+/*--------------------------------------------------------------------Responsividad tablet*/
 @media (max-width: 768px) {
-  /*-------------------section*/
-  h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 3rem;
-    width: 25rem;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: escribiendo 2s steps(30), cursor 0.5s step-end infinite alternate;
-  }
+  /*-------------------------section*/
   section #contenedorGrid {
     grid-template-columns: 40rem;
   }
+  section #contenedorGrid #bloqueParrafo h1 {
+    font-size: 3rem;
+  }
 
-  section div img {
-    margin-top: 2rem;
+  section #contenedorGrid #bloqueParrafo p {
+    font-size: 1rem;
+  }
+
+  section #contenedorGrid #bloqueParrafo a {
+    font-size: 1rem;
+  }
+
+  section #contenedorGrid > img {
+    margin-top: 3rem;
     height: 60vh;
     width: 60vh;
     border-radius: 12px;
   }
-  /*------------------nav*/
+  section #contenedorGrid #bloqueParrafo {
+    width: 38rem;
+  }
+
+  /*-------------------------nav*/
   nav #menu li > div > a > i {
     display: inline;
   }
   nav ul li div span {
     display: none;
   }
-
   nav #menu {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -244,32 +200,31 @@ button a:hover {
     justify-content: flex-start;
   }
 }
-/*---------------------------------------responsividad celular*/
+/*---------------------------------------------------------Responsividad celular*/
 @media (max-width: 500px) {
-  /*----------------------section*/
-  h1 {
-    color: white;
-    font-weight: bold;
+  /*---------------------section*/
+  section #contenedorGrid #bloqueParrafo h1 {
     font-size: 2rem;
-    width: 15rem;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: escribiendo 2s steps(30), cursor 0.5s step-end infinite alternate;
   }
-  section .contenido {
-    position: relative;
-    width: 80vh;
-    height: 80vh;
+
+  section #contenedorGrid #bloqueParrafo p {
+    font-size: 0.8rem;
   }
-  section div img {
-    margin: 0;
+
+  section #contenedorGrid #bloqueParrafo a {
+    font-size: 0.8rem;
+  }
+
+  section #contenedorGrid > img {
+    margin-top: 3rem;
     height: 40vh;
     width: 40vh;
+    border-radius: 12px;
   }
-  section #contenedorGrid {
-    grid-template-rows: 25rem;
+  section #contenedorGrid #bloqueParrafo {
+    width: 28rem;
   }
-  /*-----------------------------------------hamburger*/
+  /*---------------------hamburger*/
   nav {
     margin-top: 2rem;
     background-color: transparent;

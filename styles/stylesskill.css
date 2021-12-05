@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: inherit;
+}
+/*-----------------------------------------------------------nav*/
+header {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  width: 15vh;
+}
+nav {
+  left: -4rem;
+  background-color: rgba(26, 25, 25, 0.986);
+  width: 15vh;
+  height: 100vh;
+}
+
+nav #logo {
+  width: 15vh;
+  height: 15vh;
+  padding: 0.5rem;
+  position: relative;
+  left: -0.5rem;
+}
+
+nav #contentLogo {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+nav #menu {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.divMenu {
+  width: 15vh;
+  height: 8vh;
+  padding: 1rem;
+  border-top: 1px solid rgb(9, 51, 1);
+  border-bottom: 1px solid rgb(9, 51, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li div a {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+  font-size: 1rem;
+}
+
+nav #menu li > div > a > i {
+  display: none;
+}
+
+nav div > a > i {
+  color: rgb(116, 116, 116);
+}
+
+nav #redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav #redes a i {
+  padding: 0.5rem;
+}
+
+nav #redes a i:hover {
+  cursor: pointer;
+  color: #32c1cd;
+  transition: linear;
+}
+
+nav > ul > #contentLogo > #programador {
+  font-size: 0.8rem;
+}
+.divMenu a span:hover {
+  cursor: pointer;
+  color: #32c1cd;
+  transition: linear;
+}
+/*----------------------------------------------------------------section*/
+body {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: repeat-y;
+}
+section {
+  height: 100vh;
+}
+section #contenedorGrid {
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+section #contenedorGrid #bloqueParrafo {
+  width: 40rem;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+section #contenedorGrid #bloqueParrafo h1 {
+  color: rgb(12, 155, 124);
+  font-size: 5rem;
+}
+
+section #contenedorGrid #bloqueParrafo p {
+  position: relative;
+  left: -5rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: justify;
+  padding: 0.5rem 5rem;
+}
+
+section #contenedorGrid #bloqueParrafo a {
+  color: rgb(12, 155, 124);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+section #contenedorGrid > img {
+  height: 80vh;
+  width: 80vh;
+  border-radius: 12px;
+}
+
+section #contenedorGrid .divDos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+
+section #contenedorGrid .divDos #HTML{
+  color:white;
+  font-weight: 900;
+}
+
+section #contenedorGrid .divDos .HTML{
+  background-color: yellow;
+  width: 60%;
+  height: 1%;
+  transition:linear ;
+}
+section #contenedorGrid .divDos #CSS{
+  color:white;
+  font-weight: 900;
+}
+
+section #contenedorGrid .divDos .CSS{
+  background-color: rgb(81, 255, 0);
+  width: 50%;
+  height: 1%;
+  transition:linear ;
+}
+
+section #contenedorGrid .divDos #JS{
+  color:white;
+  font-weight: 900;
+}
+
+section #contenedorGrid .divDos .JS{
+  background-color: rgb(94, 180, 236);
+  width: 30%;
+  height: 1%;
+  transition:linear ;
+}
+section #contenedorGrid .divTres {
+  background-color: rgba(0, 0, 0, 0.411);
+  margin-top: 5rem;
+  padding: 3rem;
+  width: 15rem;
+  height: 15rem;
+  grid-column: 2;
+  grid-row: 2 / 3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section #contenedorGrid .divTres header{
+  font-weight: 900;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+label {
+  margin: 1rem;
+  visibility: hidden;
+}
+
+input#hamburguesa-icono {
+  visibility: hidden;
+}
+/*--------------------------------------------------------------------Responsividad tablet*/
+@media (max-width: 768px) {
+  /*-------------------------section*/
+  section #contenedorGrid {
+    grid-template-columns: 40rem;
+  }
+  section #contenedorGrid #bloqueParrafo h1 {
+    font-size: 3rem;
+  }
+
+  section #contenedorGrid #bloqueParrafo p {
+    font-size: 1rem;
+  }
+
+  section #contenedorGrid #bloqueParrafo a {
+    font-size: 1rem;
+  }
+
+  section #contenedorGrid > img {
+    margin-top: 3rem;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 12px;
+  }
+  section #contenedorGrid #bloqueParrafo {
+    width: 38rem;
+  }
+
+  /*-------------------------nav*/
+  nav #menu li > div > a > i {
+    display: inline;
+  }
+  nav ul li div span {
+    display: none;
+  }
+  nav #menu {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: white;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+/*---------------------------------------------------------Responsividad celular*/
+@media (max-width: 500px) {
+  /*---------------------section*/
+  section #contenedorGrid #bloqueParrafo h1 {
+    font-size: 2rem;
+  }
+
+  section #contenedorGrid #bloqueParrafo p {
+    font-size: 0.8rem;
+  }
+
+  section #contenedorGrid #bloqueParrafo a {
+    font-size: 0.8rem;
+  }
+
+  section #contenedorGrid > img {
+    margin-top: 3rem;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 12px;
+  }
+  section #contenedorGrid #bloqueParrafo {
+    width: 28rem;
+  }
+  /*---------------------hamburger*/
+  nav {
+    margin-top: 2rem;
+    background-color: transparent;
+  }
+  nav #contentLogo {
+    display: block;
+  }
+  nav #menu li > div > a > i {
+    display: none;
+  }
+  nav ul li div span {
+    display: inline;
+  }
+
+  label i {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+    visibility: visible;
+    color: white;
+  }
+
+  input#hamburguesa-icono ~ nav {
+    display: none;
+  }
+
+  input#hamburguesa-icono:checked ~ nav {
+    display: block;
+  }
+}
