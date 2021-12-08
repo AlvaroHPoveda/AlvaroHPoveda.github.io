@@ -102,9 +102,56 @@ nav > ul > #contentLogo > #programador {
 body {
   background-image: url("../img/fondo.jpg");
   background-repeat: repeat-y;
+  overflow-y: hidden;
 }
 section {
-  height: 100vh;
+  width: 90%;
+  position: relative;
+  top: -100vh;
+  left: 15vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section a article img {
+  width: 20rem;
+  height: 10rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+section a article {
+  box-shadow: 0.5rem 0.4rem 0.5rem;
+  width: 50vh;
+  height: 50vh;
+  position: relative;
+  top: 10rem;
+  padding-left: 1rem;
+  background-color: rgb(56, 60, 63);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section a article:hover {
+  width: 49.5vh;
+  height: 49.5vh;
+}
+
+#work01 {
+  grid-column: span 1;
+}
+
+#work02 {
+  grid-column: span 2;
+}
+
+section a article p {
+  color: white;
+  text-align: center;
 }
 
 label {
@@ -118,41 +165,55 @@ input#hamburguesa-icono {
 /*--------------------------------------------------------------------Responsividad tablet*/
 @media (max-width: 768px) {
   /*-------------------------section*/
+  body {
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-left: 5rem;
+    position: relative;
+    top: -50rem;
+  }
 
   /*-------------------------nav*/
   nav #menu li > div > a > i {
-    display: inline;
+    display: block;
   }
   nav ul li div span {
     display: none;
   }
-  nav #menu {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    color: white;
-    display: flex;
-    height: 50vh;
-    flex-direction: column;
-    justify-content: flex-start;
+
+  nav #menu li > div > a > i:hover {
+    cursor: pointer;
+    color: #32c1cd;
+    transition: linear;
   }
 }
 /*---------------------------------------------------------Responsividad celular*/
 @media (max-width: 500px) {
   /*---------------------section*/
+  section a article img {
+    width: 13rem;
+    height: 8rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+  }
 
+  section a article {
+    width: 35vh;
+    height: 35vh;
+  }
+  section a article:hover {
+    width: 34.5vh;
+    height: 34.5vh;
+  }
   /*---------------------hamburger*/
   nav {
     margin-top: 2rem;
     background-color: transparent;
-  }
-  nav #contentLogo {
-    display: block;
-  }
-  nav #menu li > div > a > i {
-    display: none;
-  }
-  nav ul li div span {
-    display: inline;
   }
 
   label i {
@@ -164,10 +225,10 @@ input#hamburguesa-icono {
   }
 
   input#hamburguesa-icono ~ nav {
-    display: none;
+    visibility: hidden;
   }
 
   input#hamburguesa-icono:checked ~ nav {
-    display: block;
+    visibility: visible;
   }
 }

@@ -102,6 +102,7 @@ nav > ul > #contentLogo > #programador {
 body {
   background-image: url("../img/fondo.jpg");
   background-repeat: repeat-y;
+  overflow-y: hidden;
 }
 section {
   height: 100vh;
@@ -165,6 +166,10 @@ input#hamburguesa-icono {
 /*--------------------------------------------------------------------Responsividad tablet*/
 @media (max-width: 768px) {
   /*-------------------------section*/
+  body {
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
   section #contenedorGrid {
     grid-template-columns: 40rem;
   }
@@ -184,24 +189,21 @@ input#hamburguesa-icono {
   }
   section #contenedorGrid img {
     margin-top: 2rem;
-    height: 60vh;
-    width: 75vh;
+    height: 50vh;
+    width: 65vh;
   }
   /*-------------------------nav*/
   nav #menu li > div > a > i {
-    display: inline;
+    display: block;
   }
   nav ul li div span {
     display: none;
   }
-  nav #menu {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    color: white;
-    display: flex;
-    height: 50vh;
-    flex-direction: column;
-    justify-content: flex-start;
+
+  nav #menu li > div > a > i:hover {
+    cursor: pointer;
+    color: #32c1cd;
+    transition: linear;
   }
 }
 /*---------------------------------------------------------Responsividad celular*/
@@ -234,15 +236,6 @@ input#hamburguesa-icono {
     margin-top: 2rem;
     background-color: transparent;
   }
-  nav #contentLogo {
-    display: block;
-  }
-  nav #menu li > div > a > i {
-    display: none;
-  }
-  nav ul li div span {
-    display: inline;
-  }
 
   label i {
     position: -webkit-sticky;
@@ -253,10 +246,10 @@ input#hamburguesa-icono {
   }
 
   input#hamburguesa-icono ~ nav {
-    display: none;
+    visibility: hidden;
   }
 
   input#hamburguesa-icono:checked ~ nav {
-    display: block;
+    visibility: visible;
   }
 }

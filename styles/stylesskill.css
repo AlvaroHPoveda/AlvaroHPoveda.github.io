@@ -102,6 +102,7 @@ nav > ul > #contentLogo > #programador {
 body {
   background-image: url("../img/fondo.jpg");
   background-repeat: repeat-y;
+  overflow-y: hidden;
 }
 section {
   height: 100vh;
@@ -157,42 +158,43 @@ section #contenedorGrid .divDos {
   grid-row: 1 / 2;
 }
 
-section #contenedorGrid .divDos #HTML{
-  color:white;
+section #contenedorGrid .divDos #HTML {
+  color: white;
   font-weight: 900;
 }
 
-section #contenedorGrid .divDos .HTML{
+section #contenedorGrid .divDos .HTML {
   background-color: yellow;
   width: 60%;
   height: 1%;
-  transition:linear ;
+  transition: linear;
 }
-section #contenedorGrid .divDos #CSS{
-  color:white;
+section #contenedorGrid .divDos #CSS {
+  color: white;
   font-weight: 900;
 }
 
-section #contenedorGrid .divDos .CSS{
+section #contenedorGrid .divDos .CSS {
   background-color: rgb(81, 255, 0);
   width: 50%;
   height: 1%;
-  transition:linear ;
+  transition: linear;
 }
 
-section #contenedorGrid .divDos #JS{
-  color:white;
+section #contenedorGrid .divDos #JS {
+  color: white;
   font-weight: 900;
 }
 
-section #contenedorGrid .divDos .JS{
+section #contenedorGrid .divDos .JS {
   background-color: rgb(94, 180, 236);
   width: 30%;
   height: 1%;
-  transition:linear ;
+  transition: linear;
 }
 section #contenedorGrid .divTres {
   background-color: rgba(0, 0, 0, 0.411);
+  border-radius: 12px;
   margin-top: 5rem;
   padding: 3rem;
   width: 15rem;
@@ -205,7 +207,7 @@ section #contenedorGrid .divTres {
   justify-content: center;
 }
 
-section #contenedorGrid .divTres header{
+section #contenedorGrid .divTres header {
   font-weight: 900;
   margin-top: 1rem;
   margin-bottom: 4rem;
@@ -222,9 +224,31 @@ input#hamburguesa-icono {
 /*--------------------------------------------------------------------Responsividad tablet*/
 @media (max-width: 768px) {
   /*-------------------------section*/
-  section #contenedorGrid {
-    grid-template-columns: 40rem;
+  body {
+    overflow-y: visible;
+    overflow-x: hidden;
   }
+  section #contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section #contenedorGrid #bloqueParrafo {
+    width: 40rem;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  section #contenedorGrid .divDos {
+    grid-column: 1;
+    grid-row: 2;
+    height: 20rem;
+  }
+
+  section #contenedorGrid .divTres {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
   section #contenedorGrid #bloqueParrafo h1 {
     font-size: 3rem;
   }
@@ -249,19 +273,16 @@ input#hamburguesa-icono {
 
   /*-------------------------nav*/
   nav #menu li > div > a > i {
-    display: inline;
+    display: block;
   }
   nav ul li div span {
     display: none;
   }
-  nav #menu {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    color: white;
-    display: flex;
-    height: 50vh;
-    flex-direction: column;
-    justify-content: flex-start;
+
+  nav #menu li > div > a > i:hover {
+    cursor: pointer;
+    color: #32c1cd;
+    transition: linear;
   }
 }
 /*---------------------------------------------------------Responsividad celular*/
@@ -293,15 +314,6 @@ input#hamburguesa-icono {
     margin-top: 2rem;
     background-color: transparent;
   }
-  nav #contentLogo {
-    display: block;
-  }
-  nav #menu li > div > a > i {
-    display: none;
-  }
-  nav ul li div span {
-    display: inline;
-  }
 
   label i {
     position: -webkit-sticky;
@@ -312,10 +324,10 @@ input#hamburguesa-icono {
   }
 
   input#hamburguesa-icono ~ nav {
-    display: none;
+    visibility: hidden;
   }
 
   input#hamburguesa-icono:checked ~ nav {
-    display: block;
+    visibility: visible;
   }
 }

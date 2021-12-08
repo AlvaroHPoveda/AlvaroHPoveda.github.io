@@ -103,6 +103,8 @@ nav > ul > #contentLogo > #programador {
 body {
   background-image: url("../img/fondo.jpg");
   background-repeat: repeat-y;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 section {
@@ -143,7 +145,7 @@ input#hamburguesa-icono {
 }
 
 /*--------------------------------------------animacion*/
-h1 {
+h1 p#primer {
   color: white;
   font-weight: bold;
   font-size: 5rem;
@@ -168,6 +170,57 @@ h1 {
   }
 }
 
+h1 p#segundo {
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+  width: 40rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: escribiendo 2s steps(30), cursor 0.5s step-end infinite alternate;
+  animation-delay: 0.5s;
+}
+
+@keyframes escribiendo {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10ch;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h1 p#tercero {
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+  width: 40rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: escribiendo 2s steps(30), cursor 0.5s step-end infinite alternate;
+  animation-delay: 2s;
+}
+
+@keyframes escribiendo {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10ch;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
 h1 #segundo span::before {
   content: url(../img/Logo.png);
   font-size: 1rem;
@@ -207,14 +260,15 @@ button a:hover {
 /*-----------------------------------------responsividad tablet*/
 @media (max-width: 768px) {
   /*-------------------section*/
-  h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 3rem;
-    width: 25rem;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: escribiendo 2s steps(30), cursor 0.5s step-end infinite alternate;
+  body {
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+
+  h1 p#primer,
+  h1 p#segundo,
+  h1 p#tercero {
+    font-size: 4rem;
   }
   section #contenedorGrid {
     grid-template-columns: 40rem;
@@ -228,41 +282,29 @@ button a:hover {
   }
   /*------------------nav*/
   nav #menu li > div > a > i {
-    display: inline;
+    display: block;
   }
   nav ul li div span {
     display: none;
   }
 
-  nav #menu {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    color: white;
-    display: flex;
-    height: 50vh;
-    flex-direction: column;
-    justify-content: flex-start;
+  nav #menu li > div > a > i:hover {
+    cursor: pointer;
+    color: #32c1cd;
+    transition: linear;
   }
 }
 /*---------------------------------------responsividad celular*/
 @media (max-width: 500px) {
   /*----------------------section*/
-  h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    width: 15rem;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: escribiendo 2s steps(30), cursor 0.5s step-end infinite alternate;
+  h1 p#primer,
+  h1 p#segundo,
+  h1 p#tercero {
+    font-size: 3rem;
   }
-  section .contenido {
-    position: relative;
-    width: 80vh;
-    height: 80vh;
-  }
+
   section div img {
-    margin: 0;
+    margin-top: 2rem;
     height: 40vh;
     width: 40vh;
   }
@@ -274,15 +316,6 @@ button a:hover {
     margin-top: 2rem;
     background-color: transparent;
   }
-  nav #contentLogo {
-    display: block;
-  }
-  nav #menu li > div > a > i {
-    display: none;
-  }
-  nav ul li div span {
-    display: inline;
-  }
 
   label i {
     position: -webkit-sticky;
@@ -293,10 +326,10 @@ button a:hover {
   }
 
   input#hamburguesa-icono ~ nav {
-    display: none;
+    visibility: hidden;
   }
 
   input#hamburguesa-icono:checked ~ nav {
-    display: block;
+    visibility: visible;
   }
 }
