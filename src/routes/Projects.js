@@ -14,14 +14,14 @@ const Projects = () => {
                     {
                         projects.map(project => (
 
-                            <li className='cardProjects'>                               
-                                <div className='side forehead'>
+                            <li className='cardProjects' key={project.page}>                               
+                                <div className='side forehead' >
                                     <img className='imgforehead'  src={project.image} alt="" />
                                 </div>
                                 <div className='side behind'>
-                                    <div className='diviconCard'>
-                                        <a className='iconCard' href={project.page}><i class="fas fa-link"></i></a>
-                                        <a className='iconCard'href={project.github}><i class="fab fa-github"></i></a>
+                                    <div className='diviconCard' >
+                                        <a className='iconCard' href={project.page}><i className="fas fa-link"></i></a>
+                                        <a className='iconCard'href={project.github}><i className="fab fa-github"></i></a>
                                     </div>
                                 </div>                                                            
                             </li> 
