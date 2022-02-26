@@ -1,12 +1,8 @@
 import './App.css';
 import React from 'react';
 import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
-import Home  from './routes/Home';
-import About from "./routes/About";
-import MySkill from "./routes/MySkill";
-import Projects from "./routes/Projects";
-import Contact from "./routes/Contact";
-import Layout from "./Layout";
+import {Home, About, MySkill, Projects, Contact}  from './routes';
+import Layout from "./components/Layout";
 
 function App() {
   return (

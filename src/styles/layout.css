@@ -1,0 +1,70 @@
+.nav{
+    background-color: rgb(46, 45, 45);
+    color: #fff;
+    width: 5vw;
+    height: 100vh;
+    text-align: center;
+    font-size: medium;  
+  }
+  
+  .icono{
+    background-color: rgb(5, 5, 5);
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    font-size: small;
+  }
+  
+  .logo{
+    width: 4rem;
+    padding: 0.3rem;
+  }
+  
+  ul{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border-top: 0.1vh solid rgb(90, 90, 90);
+  }
+  
+  li{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 0.1vh solid rgb(90, 90, 90);
+   }
+  
+  .networks{
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .fab{
+    color: #fff;
+  }
+  
+  .fas{
+    color: #fff;
+  }
+  
+  .fab:hover{
+    color: rgb(20, 219, 176);
+  }
+  
+  .fas:hover{
+    color: rgb(20, 219, 176);
+  }
+  
+  .active{
+    background-color: rgb(20, 219, 176);
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

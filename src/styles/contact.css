@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: inherit;
+}
+
+.asidecontact{
+  background-image: url("../img/mapa.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
+  height: 100vh;
+}
