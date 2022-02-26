@@ -39,15 +39,15 @@
 
 @keyframes banner {
   0%,
-  20% {
-    background-image: url("../Environment/tarjetaCambiaColor.gif");
+  65% {
+    background-image: url("../Environment/ecommer.gif");
   }
-  30%,
-  50% {
+  70%,
+  80% {
     background-image: url("../Environment/Dulceria.gif");
   }
-  60%,
-  80% {
+  80%,
+  90% {
     background-image: url("../Environment/clima.gif");
   }
   90%,

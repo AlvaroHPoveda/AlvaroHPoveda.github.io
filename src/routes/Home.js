@@ -15,7 +15,7 @@ const Home = () => {
           <br />
           Web Developer
         </h1>
-        <h3>Front End Developer</h3>
+        <h3>Developer Web Full - Stack</h3>
         <button onClick={() => Navigate("/Contact")} className="button-contact">
           Contact me!
         </button>
