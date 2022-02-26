@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a4a8d0d.css",
-    "main.js": "/static/js/main.d80a2a63.js",
+    "main.css": "/static/css/main.3a3892d5.css",
+    "main.js": "/static/js/main.264c37c1.js",
+    "static/media/ecommer.gif": "/static/media/ecommer.f5bd1130f57de0a9bd14.gif",
     "static/media/clima.gif": "/static/media/clima.2c2b2c30f5b5f22963b1.gif",
     "static/media/RickandMorty.gif": "/static/media/RickandMorty.4a940a5b0237430308f8.gif",
     "static/media/fondo.jpg": "/static/media/fondo.4ec4dd1cc19d83df55e3.jpg",
@@ -9,7 +10,6 @@
     "static/media/Dulceria.gif": "/static/media/Dulceria.ca99504b8a45d43ee010.gif",
     "static/media/Developer02.gif": "/static/media/Developer02.aaacf95a1b5db4a04de6.gif",
     "static/media/css.png": "/static/media/css.726602605a3830d26cdd.png",
-    "static/media/tarjetaCambiaColor.gif": "/static/media/tarjetaCambiaColor.c4eacaf67d77bde4790f.gif",
     "static/media/react.png": "/static/media/react.e0b9ccceab1c8741c0b9.png",
     "static/media/html.png": "/static/media/html.ef15effc5180dbe4abd4.png",
     "static/media/js.png": "/static/media/js.75220e22aacfddc29275.png",
@@ -17,11 +17,11 @@
     "static/media/academlo.png": "/static/media/academlo.688942cc6b0205753e79.png",
     "static/media/Logo.png": "/static/media/Logo.0dd8240b8ab2aeb4c524.png",
     "index.html": "/index.html",
-    "main.0a4a8d0d.css.map": "/static/css/main.0a4a8d0d.css.map",
-    "main.d80a2a63.js.map": "/static/js/main.d80a2a63.js.map"
+    "main.3a3892d5.css.map": "/static/css/main.3a3892d5.css.map",
+    "main.264c37c1.js.map": "/static/js/main.264c37c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a4a8d0d.css",
-    "static/js/main.d80a2a63.js"
+    "static/css/main.3a3892d5.css",
+    "static/js/main.264c37c1.js"
   ]
 }
