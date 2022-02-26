@@ -8,32 +8,53 @@
   font-style: inherit;
 }
 
-.img-skill-html{
+.div-html-css {
+  display: flex;
+}
+
+.img-skill-html {
   width: 4rem;
-  margin: 0 auto;  
-}
-
-.img-skill-css{
-  width: 3rem; 
-  margin: 0 auto;   
-}
-
-.img-skill-js{
-  width: 3rem; 
-  margin: 0 auto; 
-}
-
-.img-skill-react{
-  width: 4rem;  
   margin: 0 auto;
 }
 
-.img-skill-redux{
-  width: 4rem;  
-  margin: 0 auto; 
+.img-skill-css {
+  width: 3rem;
+  margin: 0 auto;
 }
 
-.asidemyskill{
+.div-js {
+  margin: 20%;
+}
+.img-skill-js {
+  width: 3rem;
+  margin: 0 auto;
+}
+
+.div-react-redux {
+  display: flex;
+}
+
+.img-skill-react {
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.img-skill-redux {
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.div-nodejs {
+  margin: 20%;
+}
+
+.img-skill-nodejs {
+  width: 4rem;
+  margin: 0 auto;
+  background-color: rgb(240, 248, 255);
+}
+
+.asidemyskill {
   margin-top: 2rem;
   height: 100vh;
   width: 90%;
@@ -52,7 +73,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6px;  
+  padding: 6px;
 }
 
 .progress-bar-html {
@@ -72,74 +93,70 @@
 }
 
 .progress-striped-html .progress-bar-html {
-  background-color: #FCBC51;
+  background-color: #fcbc51;
   width: 90%;
-  background-image: linear-gradient(        45deg, rgb(252,163,17) 25%,         transparent 25%, transparent 50%,         rgb(252,163,17) 50%, rgb(252,163,17) 75%,        transparent 75%, transparent);
+  background-image: linear-gradient(
+    45deg,
+    rgb(252, 163, 17) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(252, 163, 17) 50%,
+    rgb(252, 163, 17) 75%,
+    transparent 75%,
+    transparent
+  );
   animation: progressAnimationStrike 2s;
   -webkit-animation: progressAnimationStrike 2s;
 }
 
 @keyframes progressAnimationStrike {
-     from { width: 0 }
-     to   { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-
-.progress-css {
-  grid-column: 2/7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6px;  
-}
-
-.progress-bar-css {	
-  height: 18px;
-	background-color: #ee303c;  
-  border-radius: 4px; 
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
-}
-
-.progress-striped-css .progress-bar-css {
-  background-color: #6b51fc;
-  width: 95%;
-  background-image: linear-gradient(        45deg, rgb(52, 17, 252) 25%,         transparent 25%, transparent 50%,         rgb(52, 17, 252) 50%, rgb(52, 17, 252) 75%,        transparent 75%, transparent);
-  animation: progressAnimationStrike 2s;
-  -webkit-animation: progressAnimationStrike 2s;
-}
-
-@keyframes progressAnimationStrike {
-     from { width: 0 }
-     to   { width: 100% }
-}
-
 .progress-js {
   grid-column: 2/7;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6px;  
+  padding: 6px;
 }
 
-.progress-bar-js {	
+.progress-bar-js {
   height: 18px;
-	background-color: #ee303c;  
-  border-radius: 4px; 
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
+  background-color: #ee303c;
+  border-radius: 4px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
 }
 
 .progress-striped-js .progress-bar-js {
   background-color: #cfdd4d;
   width: 80%;
-  background-image: linear-gradient(        45deg, rgb(217, 252, 17) 25%,         transparent 25%, transparent 50%,         rgb(217, 252, 17) 50%, rgb(217, 252, 17) 75%,        transparent 75%, transparent);
+  background-image: linear-gradient(
+    45deg,
+    rgb(217, 252, 17) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(217, 252, 17) 50%,
+    rgb(217, 252, 17) 75%,
+    transparent 75%,
+    transparent
+  );
   animation: progressAnimationStrike 2s;
   -webkit-animation: progressAnimationStrike 2s;
 }
 
 @keyframes progressAnimationStrike {
-     from { width: 0 }
-     to   { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .progress-react {
@@ -147,79 +164,54 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6px;  
+  padding: 6px;
 }
 
-.progress-bar-react {	
-  height: 18px;
-	background-color: #ee303c;  
-  border-radius: 4px; 
-  transition: 0.4s linear;  
-  transition-property: width, background-color;    
-}
-
-.progress-striped-react .progress-bar-react {
-  background-color: #50b9d3;
-  width: 85%;
-  background-image: linear-gradient(        45deg, rgb(17, 205, 252) 25%,         transparent 25%, transparent 50%,         rgb(17, 205, 252) 50%, rgb(17, 205, 252) 75%,        transparent 75%, transparent);
-  animation: progressAnimationStrike 2s;
-  -webkit-animation: progressAnimationStrike 2s;
-}
-
-@keyframes progressAnimationStrike {
-     from { width: 0 }
-     to   { width: 100% }
-}
-
-.progress-redux {
-  grid-column: 2/7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6px;  
-}
-
-.progress-bar-redux {
+.progress-bar-react {
   height: 18px;
   background-color: #ee303c;
   border-radius: 4px;
   transition: 0.4s linear;
   transition-property: width, background-color;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
 }
 
-.progress-striped-redux .progress-bar-redux {
-  background-color: #560e77;
-  width: 80%;
-  background-image: linear-gradient(        45deg, rgb(166, 8, 206) 25%,         transparent 25%, transparent 50%,         rgb(166, 8, 206) 50%, rgb(166, 8, 206) 75%,        transparent 75%, transparent);
+.progress-striped-react .progress-bar-react {
+  background-color: #50b9d3;
+  width: 85%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(17, 205, 252) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(17, 205, 252) 50%,
+    rgb(17, 205, 252) 75%,
+    transparent 75%,
+    transparent
+  );
   animation: progressAnimationStrike 2s;
   -webkit-animation: progressAnimationStrike 2s;
 }
 
 @keyframes progressAnimationStrike {
-     from { width: 0 }
-     to   { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-.card-student{
+.card-student {
   background-color: rgba(20, 219, 176, 0.425);
   box-shadow: 5px 10px 8px rgb(32, 32, 32);
   border-radius: 1rem;
   grid-row: 7/8;
   color: rgb(20, 219, 176);
-  text-shadow:
-		0 0 5px rgba(0,178,255,1),
-		0 0 10px rgba(0,178,255,1),
-		0 0 20px rgba(0,178,255,1),
-		0 0 40px rgba(38,104,127,1),
-		0 0 80px rgba(38,104,127,1),
-		0 0 90px rgba(38,104,127,1),
-		0 0 100px rgba(38,104,127,1),
-		0 0 140px rgba(38,104,127,1),
-		0 0 180px rgba(38,104,127,1);
+  text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+    0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+    0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+    0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+    0 0 180px rgba(38, 104, 127, 1);
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -232,8 +224,7 @@
   -o-border-radius: 1rem;
 }
 
-.img-card-student{
+.img-card-student {
   width: 6rem;
   margin: 0 auto;
- 
 }

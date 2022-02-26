@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { js, html, css, react, redux, academlo } from "../icon/index";
+import { js, html, css, react, redux, academlo, nodeJS } from "../icon/index";
 import { myskill } from "../styles";
 
 const MySkill = () => {
@@ -44,35 +44,41 @@ const MySkill = () => {
       </div>
       <aside className="asidemyskill">
         <div className="container-skill">
-          <img className="img-skill-html" src={html} alt="" />
+          <div className="div-html-css">
+            <img className="img-skill-html" src={html} alt="" />
+            <img className="img-skill-css" src={css} alt="" />
+          </div>
           <div className="progress-html progress-striped-html">
             <div className="progress-bar-html"></div>
           </div>
         </div>
+
         <div className="container-skill">
-          <img className="img-skill-css" src={css} alt="" />
-          <div className="progress-css progress-striped-css">
-            <div className="progress-bar-css"></div>
+          <div className="div-js">
+            <img className="img-skill-js" src={js} alt="" />
           </div>
-        </div>
-        <div className="container-skill">
-          <img className="img-skill-js" src={js} alt="" />
           <div className="progress-js progress-striped-js">
             <div className="progress-bar-js"></div>
           </div>
         </div>
         <div className="container-skill">
-          <img className="img-skill-react" src={react} alt="" />
+          <div className="div-react-redux">
+            <img className="img-skill-react" src={react} alt="" />
+            <img className="img-skill-redux" src={redux} alt="" />
+          </div>
           <div className="progress-react progress-striped-react">
             <div className="progress-bar-react"></div>
           </div>
         </div>
         <div className="container-skill">
-          <img className="img-skill-redux" src={redux} alt="" />
-          <div className="progress-redux progress-striped-redux">
-            <div className="progress-bar-redux"></div>
+          <div className="div-nodejs">
+            <img className="img-skill-nodejs" src={nodeJS} alt="" />            
+          </div>
+          <div className="progress-react progress-striped-react">
+            <div className="progress-bar-react"></div>
           </div>
         </div>
+
         <div className="card-student">
           <p>
             <b>Full stack developer</b>

@@ -12,6 +12,7 @@ const Contact = () => {
           question, feel free to email me.
         </h3>
         <h5>Email: alvaropoveda@ingenieros.com</h5>
+        <h5>Celular: (+57) 3242410098 </h5>
         <form></form>
       </div>
       <aside className="asidecontact"></aside>
