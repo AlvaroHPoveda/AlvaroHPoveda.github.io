@@ -2642,8 +2642,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__project-link i {
     font-size: 1.8rem;
-    line-height: 4.2rem;
-    z-index: 1;/*1*/
+    line-height: 4.2rem;    
 }
 
 .item-folio__project-link::before {

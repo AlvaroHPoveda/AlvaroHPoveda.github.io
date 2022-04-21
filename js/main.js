@@ -9,7 +9,7 @@
     
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        mailChimpURL   : 'https://ingenieros.us14.list-manage.com/subscribe/post?u=0a42dc0954bedba655d5355d9&amp;id=bc8994bce4'   // mailchimp url
     },
 
     $WIN = $(window);
@@ -29,7 +29,7 @@
         $WIN.on('load', function() {
 
             //force page scroll position to top at page refresh
-            // $('html, body').animate({ scrollTop: 0 }, 'normal');
+            $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
             $("#loader").fadeOut("slow", function() {
